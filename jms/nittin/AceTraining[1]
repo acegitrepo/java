@@ -1,0 +1,15 @@
+### This file keeps the basic information about ace training 
+
+
+Today will be the self-study session with below agenda. You need to send the code for JMS by today 4 PM to Vikram and me. Kindly try to use GIT repository to check in code and share the GIT URL.
+
+A.	Self-Study JMS content uploaded on VOX  and implement below example for communication by today. 
+
+1.	Setup Active MQ and create 2 queues - >orderQueue and executedOrderQueue.
+2.	Create one Order and send it to orderQueue. Perform at least 2 validations while creation of order. Ex- Price cannot be 0 or ÎíÎñve. Throw custom exception in this scenario.
+3.	Once the order is received on queue, process it by changing the status of order as ÎéÎíProcessedÎéÎí. While processing, you need to validate the order quantity if it is available or not ( Assume some quantity for an item). If not then do not process the order and throw exception.
+4.	If quantity is available then change the status and send the updated order back on executedOrderQueue. When the order is received on executedOrderQueue , display the message to the user that order has been processed successfully along with order details.
+B.	Self-Study  SOLID Design Principle ÎíÎñ uploaded on VOX
+C.	Self- Practice GIT ÎíÎñ PPT Attached 
+Please let me know in case of any issues.
+
