@@ -1,0 +1,9 @@
+You need to provide a design for blocking of an Debit card and send the notification to the end user.
+
+As a solution, I created two different threads, one for “Card Blocking” and another for “Notification Sending”. 
+I bind the “Notification sending” thread with “Card Blocking” thread thru join() method, so that notification could be sent after the 
+blocking of card.
+
+ As per Vikram, as a better alternative, instead of using join(), we can create a thread for blocking the card and then start an 
+ async thread for notification from within the same thread.
+
